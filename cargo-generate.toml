@@ -1,0 +1,25 @@
+[template]
+cargo_generate_version = ">=0.10.0"
+exclude = [
+    "images/**",
+    ".github/workflows/test.yml"
+]
+
+# Note: The 'authors' variable is automatically set by cargo-generate
+# from your git config in the format: "Name <email>"
+# Set these values with:
+#   git config --global user.name "Your Name"
+#   git config --global user.email "your.email@example.com"
+
+[placeholders.gh-username]
+type = "string"
+prompt = "What is your GitHub username (or organization)?"
+default = "emo-crab"
+
+[placeholders.project-description]
+type = "string"
+prompt = "What is the project description?"
+default = "A Rust project"
+
+
+

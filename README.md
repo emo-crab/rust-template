@@ -37,7 +37,7 @@
   <h3 align="center">rust-template</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    A Rust project template that works with cargo-generate!
     <br />
     <a href="https://github.com/emo-crab/rust-template"><strong>Explore the docs »</strong></a>
     <br />
@@ -83,18 +83,16 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+This is a Rust project template designed to work seamlessly with [cargo-generate](https://github.com/cargo-generate/cargo-generate). It provides a solid foundation for starting new Rust projects with best practices already configured.
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+Key features:
+* Pre-configured Cargo.toml with optimized release profiles
+* Basic project structure with error handling using thiserror
+* Rust formatting and linting configurations (.rustfmt.toml, .clippy.toml)
+* Ready-to-use GitHub Actions workflows
+* MIT License included
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
+This template helps you focus on building your project instead of setting up boilerplate code.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -102,16 +100,12 @@ Use the `BLANK_README.md` to get started.
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+This template is configured for Rust projects and includes:
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [![Rust][Rust-badge]][Rust-url]
+* [cargo-generate](https://github.com/cargo-generate/cargo-generate) - Template generation tool
+* [thiserror](https://github.com/dtolnay/thiserror) - Error handling
+* Rust 2024 edition
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -120,34 +114,36 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+This template is designed to work with [cargo-generate](https://github.com/cargo-generate/cargo-generate), which allows you to quickly create a new Rust project from this template.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+First, you need to install cargo-generate:
+
+```sh
+cargo install cargo-generate
+```
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+To create a new project from this template, use the following command:
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/emo-crab/rust-template.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+```sh
+cargo generate --git https://github.com/emo-crab/rust-template
+```
+
+You'll be prompted to provide:
+- **Project name**: The name of your new project
+- **GitHub username**: Your GitHub username or organization name
+- **Project description**: A brief description of your project
+
+Alternatively, you can clone this repository and use it as a starting point:
+
+```sh
+git clone https://github.com/emo-crab/rust-template.git
+cd rust-template
+# Make your changes
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -156,9 +152,34 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+After generating your project from this template, you can:
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+1. Build your project:
+   ```sh
+   cargo build
+   ```
+
+2. Run tests:
+   ```sh
+   cargo test
+   ```
+
+3. Run your project (if you add a binary):
+   ```sh
+   cargo run
+   ```
+
+4. Format your code:
+   ```sh
+   cargo fmt
+   ```
+
+5. Run linting:
+   ```sh
+   cargo clippy
+   ```
+
+This template includes optimized release profiles for smaller binary sizes and better performance. Check the `Cargo.toml` file for details.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -252,6 +273,8 @@ Use this space to list resources you find helpful and would like to give credit 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/emo-crab
 [product-screenshot]: images/screenshot.png
+[Rust-badge]: https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white
+[Rust-url]: https://www.rust-lang.org/
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
