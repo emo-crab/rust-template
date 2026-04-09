@@ -31,3 +31,4 @@ opt-level = 3
 
 [dependencies]
 thiserror = "2"
+tracing = "0.1"
