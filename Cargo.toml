@@ -1,13 +1,13 @@
 [package]
-name = "{{project-name}}"
+name = "emo-crab"
 version = "0.1.0"
 edition = "2024"
-authors = ["{{authors}}"]
+authors = ["root@kali-team.cn"]
 include = ["LICENSE", "Cargo.toml", "src/**/*.rs"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [workspace]
-members = ["."]
+members = []
 
 #https://github.com/johnthagen/min-sized-rust
 [profile.release]
